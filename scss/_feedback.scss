@@ -1,0 +1,91 @@
+.feedback {
+	padding: 80px 0 75px;
+
+	&__title {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 180%;
+		margin: 0 0 8px 0;
+	}
+
+	&__subtitle {
+		margin: 0 0 36px 0;
+	}
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__form {
+		flex: 1 1 670px;
+	}
+
+	&__contacts {
+		flex: 1 1 578px;
+	}
+}
+
+.subtitle {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	&__txt {
+		font-size: 16px;
+		line-height: 180%;
+		margin: 0 16px 0 0;
+	}
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+
+	&__map {
+		position: relative;
+		height: 440px;
+		background: url(../images/map.jpg) center/cover no-repeat;
+	}
+
+	&__info {
+		padding: 48px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 180%;
+		margin: 0 0 24px 0;
+	}
+
+	&__phone {
+		font-size: 40px;
+		line-height: 140%;
+		margin: 0 0 16px 0;
+		color: $mainCollor;
+		transition: all 0.3s;
+		&:active {
+			opacity: 0.7;
+		}
+	}
+
+	&__mail {
+		font-size: 24px;
+		line-height: 140%;
+		color: $accentCollor;
+		margin: 0 0 16px 0;
+		transition: all 0.3s;
+		&:active {
+			opacity: 0.7;
+		}
+	}
+
+	&__mode {
+		font-size: 16px;
+		line-height: 180%;
+		color: $grey;
+	}
+}

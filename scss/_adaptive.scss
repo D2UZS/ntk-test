@@ -1,0 +1,182 @@
+/*adaptive*/
+@media (max-width: $md1+px) {
+}
+
+@media (max-width: $md2+px) {
+	/*feedback*/
+	.feedback {
+		&__main {
+			flex-wrap: wrap;
+		}
+
+		&__form {
+			flex: 1 1 100%;
+			margin: 0 0 96px 0;
+		}
+
+		&__contacts {
+			flex: 1 1 100%;
+		}
+	}
+
+	.form {
+		padding: 0;
+	}
+	/*feedback end*/
+}
+
+@media (max-width: $md3+px) {
+	.feedback {
+		padding: 30px 0 37px;
+
+		&__title {
+			font-size: 24px;
+			line-height: 140%;
+			margin: 0 0 24px 0;
+		}
+
+		&__subtitle {
+			margin: 0 0 24px 0;
+		}
+
+		&__form {
+			margin: 0 0 32px 0;
+		}
+	}
+
+	.subtitle {
+		flex-direction: column;
+		align-items: flex-start;
+
+		&__txt {
+			margin: 0 0 8px 0;
+		}
+	}
+
+	.form {
+		&__line {
+			margin: 0 0 24px 0;
+		}
+		&__label {
+			font-size: 20px;
+		}
+
+		&__select {
+			margin: 0 0 24px 0;
+		}
+
+		&__error {
+			font-size: 12px;
+		}
+
+		&__docs {
+			margin: 0 0 8px 0;
+		}
+
+		&__consent {
+			max-width: initial;
+		}
+
+		&__btn {
+			min-height: 56px;
+		}
+	}
+
+	._focus {
+		.form__label {
+			font-size: 12px;
+			line-height: 140%;
+		}
+	}
+
+	.input {
+		font-size: 20px;
+		height: 68px;
+	}
+
+	.checkbox {
+		&__text {
+			font-size: 12px;
+			line-height: 140%;
+		}
+	}
+
+	textarea.input {
+		height: 180px;
+		padding-top: 16px;
+	}
+
+	.select {
+		&__value {
+			font-size: 20px;
+		}
+		&__option {
+			padding: 6px 24px;
+		}
+	}
+
+	.select_subtitle__select {
+		.select__options {
+			left: -24px;
+		}
+	}
+
+	.select_select-form {
+		.select__item {
+			height: 68px;
+			padding-top: 16px;
+		}
+	}
+
+	.docs {
+		&__btn {
+			font-size: 14px;
+			line-height: 143%;
+			margin: 0 0 16px 0;
+
+			&::before {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		&__item {
+			font-size: 12px;
+			line-height: 140%;
+			margin: 0 0 8px 0;
+			&:last-child {
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	.contacts {
+		&__map {
+			height: 225px;
+		}
+
+		&__info {
+			padding: 24px 24px 32px 24px;
+		}
+
+		&__title {
+			font-size: 20px;
+			margin: 0 0 16px 0;
+		}
+
+		&__phone {
+			font-size: 24px;
+			margin: 0 0 9px 0;
+		}
+
+		&__mail {
+			font-size: 20px;
+		}
+
+		&__mode {
+			font-size: 12px;
+			line-height: 140%;
+		}
+	}
+}
+/*adaptive end*/

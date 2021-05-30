@@ -1,0 +1,13 @@
+//колличество блоков в ряду
+@mixin blocks($cols, $margin) {
+	margin-right: $margin;
+	width: (100% - $cols * $margin) / $cols;
+}
+
+//адаптивный шрифт (@include adaptiv-font(36, 24);)
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

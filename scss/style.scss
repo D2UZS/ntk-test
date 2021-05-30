@@ -1,0 +1,96 @@
+//<МИКСИНЫ>===================================================================
+@import "_mixins";
+
+//<ШРИФТЫ>===================================================================
+@import "_fonts";
+
+//<ПЕРЕМЕННЫЕ>===================================================================
+$minWidth: 320px; // минимальная ширина сайта
+$maxWidth: 1440; // размер полотна в макете
+$maxWidthContainer: 1248; // ширина контейнера
+$md1: $maxWidthContainer + 30;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainCollor: #000;
+$accentCollor: #D3232A;
+$grey: #737373;
+
+//<ОБНУЛЕНИЕ>===================================================================
+@import "_null";
+
+//<НАСТРОЙКИ САЙТА>===================================================================
+body {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: $mainCollor;
+	font-size: 16px;
+	line-height: 1.2;
+	background-color: #fff;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 24px;
+	}
+	@media (max-width: $md4+px) {
+		max-width: none;
+		padding: 0 15px;
+	}
+}
+
+//<ТЕХНИЧЕССКИЕ КЛАССЫ>===================================================================
+@import "_ui";
+
+//<УНИВЕРСАЛЬНЫЕ БЛОКИ>===================================================================
+// @import "_blocks";
+// @import "_submenu";
+// @import "_burger-menu";
+// @import "_breadcrumbs";
+// @import "_popup";
+// @import "_tabs";
+// @import "_quantity";
+// @import "_range";
+// @import "_nouislider";
+// @import "_spollers";
+@import "_form";
+@import "_select";
+// @import "_swiper";
+// @import "_lightgallery";
+// @import "_scrollAnimation";
+// @import "_datepicker";
+// @import "_counterList";
+// @import "_textOverflow";
+// @import "_parallax";
+// @import "_starrating";
+// @import "_picOverContainer";
+
+//<ОСНОВНЫЕ БЛОКИ>===================================================================
+@import "_feedback";
+
+//<МЕДИА ЗАПРОСЫ>===================================================================
+@import "_adaptive";
